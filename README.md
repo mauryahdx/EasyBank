@@ -67,7 +67,7 @@ I have learnt the basics of sass and grid in the process of making this project
 
 ## Author
 
-- Website - [Surya Prakash Mourya]()
+- Surya Prakash Mourya 
 - Frontend Mentor - [@mauryahdx](https://www.frontendmentor.io/profile/mauryahdx)
 - Twitter - [@mauryahdx](https://www.twitter.com/mauryahdx)
 
