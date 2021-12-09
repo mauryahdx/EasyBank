@@ -1,0 +1,109 @@
+.hero {
+   background-color: $veryLightGray;
+
+   .container{
+    @include breakpoint-up(large){
+        display: flex;
+        align-items: center;
+        
+     
+    }
+   }
+
+
+    &__image {
+        position: relative;
+      // background-image: url('/images/bg-intro-mobile.svg');
+      //  background-size: cover;
+      //  background-repeat: no-repeat;
+      //  background-position: center center;
+        min-height: 17.5rem;
+        
+
+        @include breakpoint-up(large){
+            flex: 2;
+            order: 2;
+            min-height: 41rem;
+           // background-image: url('/images/bg-intro-desktop.svg');
+            //background-position: left center;
+            //overflow: scroll;
+        }
+        //margin-top: 3rem;
+
+        &::before {
+            content: " ";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-image: url('/images/bg-intro-mobile.svg');
+            background-size: 93%;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            z-index: 0;
+
+            @include breakpoint-up(medium){
+                height: 109%;
+                width:100%;
+                background-image: url('/images/bg-intro-desktop.svg');
+                background-size: 65%;
+                background-repeat: no-repeat;
+            }
+
+            @include breakpoint-up(large){
+                content: " ";
+                width: 116%;
+                height: 100%;
+                background-image: url('/images/bg-intro-desktop.svg');
+                background-size: 130%;
+                background-repeat: no-repeat;
+                background-position: 0% 83%;
+            }
+
+
+            
+        }
+
+        &::after {
+            content: " ";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-image: url('/images/image-mockups.png');
+            background-size: 93%;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+
+            @include breakpoint-up(medium){
+                background-size: 42%;
+                background-repeat: no-repeat;
+                background-position: center -100px;
+            }
+
+            @include breakpoint-up(large)
+            {
+                width: 116%;
+                height: 128%;
+                background-size: 86%;
+                background-repeat: no-repeat;
+                background-position: 255px -134px;
+            }
+        }
+    }
+
+
+    &__text {
+        @include breakpoint-up(large){
+            
+            flex: 1;
+            order: 1;
+            text-align: left;
+            padding-left: 1.5rem;
+            min-width: 36%;
+        }
+            margin-bottom: 4.5rem;
+            text-align: center;
+
+
+
+    }
+}
