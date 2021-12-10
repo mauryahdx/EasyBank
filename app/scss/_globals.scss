@@ -73,7 +73,7 @@ a, a:visited, a:hover {
 //spacing
 
 .container {
-    max-width: 69.375rem;
+    max-width: 95.08vw;
     margin: 0 auto;
 
     &-pall{
@@ -161,12 +161,12 @@ button, .button {
      padding: 0.765rem 2.1875rem;
      background-image: linear-gradient(to right, $limeGreen, $brightCyan);
      border: 0;
-     border-radius: 50px;
+     border-radius: 3.125rem;
      color: $white;
      cursor: pointer;
      font-weight: 400;
-     
-     width: 11.25rem;
+     width: auto;
+     max-width: 12.11rem;
      height: 2.875rem;
 
      &::before{
@@ -177,7 +177,7 @@ button, .button {
          bottom: 0;
          left: 0;
          border: 0;
-         border-radius: 50px;
+         border-radius: 3.125rem;
          background-color: rgba(255, 255, 255, 0.25);
          opacity: 0;
          transition: opacity 300ms ease-in-out;

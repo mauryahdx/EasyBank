@@ -203,7 +203,7 @@ a, a:visited, a:hover {
 }
 
 .container {
-  max-width: 69.375rem;
+  max-width: 95.08vw;
   margin: 0 auto;
 }
 
@@ -300,11 +300,12 @@ button, .button {
   background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
   border: 0;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   color: white;
   cursor: pointer;
   font-weight: 400;
-  width: 11.25rem;
+  width: auto;
+  max-width: 12.11rem;
   height: 2.875rem;
 }
 
@@ -316,7 +317,7 @@ button::before, .button::before {
   bottom: 0;
   left: 0;
   border: 0;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   background-color: rgba(255, 255, 255, 0.25);
   opacity: 0;
   -webkit-transition: opacity 300ms ease-in-out;
@@ -476,6 +477,8 @@ button:hover::before, .button:hover::before {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-right: 0;
+    padding-right: 0;
   }
 }
 
@@ -492,7 +495,8 @@ button:hover::before, .button:hover::before {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    min-height: 41rem;
+    min-height: 32rem;
+    margin-left: 11.625rem;
   }
 }
 
@@ -522,11 +526,11 @@ button:hover::before, .button:hover::before {
   .hero__image::before {
     content: " ";
     width: 116%;
-    height: 100%;
+    height: 101%;
     background-image: url("../../images/bg-intro-desktop.svg");
-    background-size: 130%;
+    background-size: 132%;
     background-repeat: no-repeat;
-    background-position: 0% 83%;
+    background-position: 23% 75%;
   }
 }
 
@@ -555,7 +559,7 @@ button:hover::before, .button:hover::before {
     height: 128%;
     background-size: 86%;
     background-repeat: no-repeat;
-    background-position: 255px -134px;
+    background-position: 103px -102px;
   }
 }
 
@@ -573,8 +577,7 @@ button:hover::before, .button:hover::before {
         -ms-flex-order: 1;
             order: 1;
     text-align: left;
-    padding-left: 1.5rem;
-    min-width: 36%;
+    min-width: 36vw;
   }
 }
 
@@ -650,7 +653,7 @@ button:hover::before, .button:hover::before {
 }
 
 .article__description {
-  font-size: 0.8125;
+  font-size: 0.7125rem;
 }
 
 .footer {
