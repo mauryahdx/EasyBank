@@ -549,7 +549,7 @@ button:hover::before, .button:hover::before {
   .hero__image::after {
     background-size: 42%;
     background-repeat: no-repeat;
-    background-position: center -100px;
+    background-position: center -6.25rem;
   }
 }
 
@@ -559,7 +559,7 @@ button:hover::before, .button:hover::before {
     height: 128%;
     background-size: 86%;
     background-repeat: no-repeat;
-    background-position: 103px -102px;
+    background-position: 6.4375rem -6.375rem;
   }
 }
 
